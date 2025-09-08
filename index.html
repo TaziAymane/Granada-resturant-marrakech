@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Granada Marrakech - Authentic Moroccan Restaurant</title>
+    <meta name="description" content="Experience authentic Moroccan cuisine at Granada Restaurant in Marrakech. Traditional tagines, couscous, and Moroccan specialties in an elegant setting.">
+    <meta name="author" content="Granada Marrakech">
+    <meta name="keywords" content="Granada Restaurant, Marrakech, Moroccan cuisine, tagine, couscous, traditional food, Morocco">
+    
+    <meta property="og:title" content="Granada Marrakech - Authentic Moroccan Restaurant">
+    <meta property="og:description" content="Experience authentic Moroccan cuisine at Granada Restaurant in Marrakech. Traditional tagines, couscous, and Moroccan specialties in an elegant setting.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@lovable_dev">
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png">
+    
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navigation" class="nav-container">
+        <div class="nav-content">
+            <button onclick="scrollToTop()" class="nav-logo">Granada</button>
+            
+            <div class="nav-desktop">
+                <button onclick="scrollToSection('about')" class="nav-link">
+                    About
+                    <span class="nav-underline"></span>
+                </button>
+                <button onclick="scrollToSection('menu')" class="nav-link">
+                    Menu
+                    <span class="nav-underline"></span>
+                </button>
+                <button onclick="scrollToSection('location')" class="nav-link">
+                    Location
+                    <span class="nav-underline"></span>
+                </button>
+            </div>
+            
+            <button class="nav-mobile-toggle" onclick="toggleMobileMenu()">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+        
+        <div id="mobile-menu" class="nav-mobile">
+            <button onclick="scrollToSection('about')" class="nav-mobile-link">About</button>
+            <button onclick="scrollToSection('menu')" class="nav-mobile-link">Menu</button>
+            <button onclick="scrollToSection('location')" class="nav-mobile-link">Location</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title fade-in-up">Granada Marrakech</h1>
+            <p class="hero-subtitle fade-in-up" style="animation-delay: 0.2s;">
+                Authentic Moroccan Cuisine in the Heart of Marrakech
+            </p>
+            <button onclick="scrollToSection('menu')" class="hero-button fade-in-up" style="animation-delay: 0.4s;">
+                View Menu
+            </button>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-line">
+                <div class="scroll-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text fade-in-left">
+                    <h2 class="section-title">About Granada</h2>
+                    <p class="about-description">
+                        Nestled in the vibrant heart of Marrakech, Granada Restaurant offers an exquisite journey through 
+                        authentic Moroccan flavors. Our culinary artisans craft each dish with traditional spices and 
+                        techniques passed down through generations.
+                    </p>
+                    <p class="about-description">
+                        From our wood-fired tagines to our hand-rolled couscous, every meal at Granada is a celebration 
+                        of Morocco's rich culinary heritage, served in an atmosphere that perfectly blends traditional 
+                        elegance with modern sophistication.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">Years of Excellence</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Traditional Recipes</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image fade-in-right">
+                    <div class="slider-container">
+                        <div class="slider">
+                            <div class="slide active">
+                                <img src="./images/img2.jpg" alt="Granada Restaurant Interior">
+                            </div>
+                            <div class="slide">
+                                <img src="./images/img3.webp" alt="Restaurant Ambiance">
+                            </div>
+                            <div class="slide">
+                                <img src="./images/img4.webp" alt="Dining Experience">
+                            </div>
+                            <div class="slide">
+                                <img src="./images/img5.webp" alt="Moroccan Cuisine">
+                            </div>
+                            <div class="slide">
+                                <img src="./images/img6.webp" alt="Moroccan Cuisine">
+                            </div>
+                            <div class="slide">
+                                <img src="./images/img7.webp" alt="Moroccan Cuisine">
+                            </div>
+                        </div>
+                        <div class="slider-nav"></div>
+                        <button class="slider-btn prev">&lt;</button>
+                        <button class="slider-btn next">&gt;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="menu-header fade-in-up">
+                <h2 class="section-title">Our Menu</h2>
+                <p class="section-subtitle">
+                    Discover the authentic flavors of Morocco, crafted with passion and served with pride
+                </p>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Starters -->
+                <div class="menu-category fade-in-up" style="animation-delay: 0s;">
+                    <h3 class="category-title">Starters</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Moroccan Harira Soup</h4>
+                                <span class="item-price">45 MAD</span>
+                            </div>
+                            <p class="item-description">Traditional lentil and tomato soup with herbs</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Zaalouk</h4>
+                                <span class="item-price">35 MAD</span>
+                            </div>
+                            <p class="item-description">Grilled eggplant salad with tomatoes and spices</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Briouats</h4>
+                                <span class="item-price">55 MAD</span>
+                            </div>
+                            <p class="item-description">Crispy pastries filled with goat cheese and herbs</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Mechoui Rolls</h4>
+                                <span class="item-price">65 MAD</span>
+                            </div>
+                            <p class="item-description">Slow-roasted lamb in crispy pastry</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Dishes -->
+                <div class="menu-category fade-in-up" style="animation-delay: 0.1s;">
+                    <h3 class="category-title">Main Dishes</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Lamb Tagine</h4>
+                                <span class="item-price">145 MAD</span>
+                            </div>
+                            <p class="item-description">Tender lamb with apricots and almonds</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Chicken Pastilla</h4>
+                                <span class="item-price">125 MAD</span>
+                            </div>
+                            <p class="item-description">Sweet and savory phyllo pastry with cinnamon</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Couscous Royal</h4>
+                                <span class="item-price">135 MAD</span>
+                            </div>
+                            <p class="item-description">Traditional couscous with mixed vegetables and meat</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Grilled Sea Bass</h4>
+                                <span class="item-price">165 MAD</span>
+                            </div>
+                            <p class="item-description">Fresh fish with chermoula marinade</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desserts -->
+                <div class="menu-category fade-in-up" style="animation-delay: 0.2s;">
+                    <h3 class="category-title">Desserts</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Chebakia</h4>
+                                <span class="item-price">25 MAD</span>
+                            </div>
+                            <p class="item-description">Honey-soaked sesame pastries with orange blossom</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Almond Makroudh</h4>
+                                <span class="item-price">30 MAD</span>
+                            </div>
+                            <p class="item-description">Semolina cake filled with dates and almonds</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Moroccan Mint Ice Cream</h4>
+                                <span class="item-price">35 MAD</span>
+                            </div>
+                            <p class="item-description">Homemade ice cream with fresh mint</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drinks -->
+                <div class="menu-category fade-in-up" style="animation-delay: 0.3s;">
+                    <h3 class="category-title">Drinks</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Moroccan Mint Tea</h4>
+                                <span class="item-price">20 MAD</span>
+                            </div>
+                            <p class="item-description">Traditional blend served with ceremony</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Fresh Orange Juice</h4>
+                                <span class="item-price">25 MAD</span>
+                            </div>
+                            <p class="item-description">Squeezed from Marrakech oranges</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Pomegranate Smoothie</h4>
+                                <span class="item-price">35 MAD</span>
+                            </div>
+                            <p class="item-description">Fresh pomegranate with yogurt</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-header">
+                                <h4 class="item-name">Moroccan Coffee</h4>
+                                <span class="item-price">30 MAD</span>
+                            </div>
+                            <p class="item-description">Spiced coffee with cardamom and cinnamon</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location-section">
+        <div class="container">
+            <div class="location-header fade-in-up">
+                <h2 class="section-title">Visit Us</h2>
+                <p class="section-subtitle">
+                    Located in the heart of Marrakech, we're easy to find and impossible to forget
+                </p>
+            </div>
+
+            <div class="location-grid">
+                <div class="location-info fade-in-left">
+                    <div class="info-card">
+                        <div class="info-item">
+                            <div class="info-icon">📍</div>
+                            <div class="info-content">
+                                <h3 class="info-title">Address</h3>
+                                <p class="info-text">
+                                    123 Rue de la Kasbah<br>
+                                    Medina, Marrakech 40000<br>
+                                    Morocco
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">📞</div>
+                            <div class="info-content">
+                                <h3 class="info-title">Contact</h3>
+                                <p class="info-text">
+                                    +212 664900020<br>
+                                    info@granadamarrakech.com
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">🕒</div>
+                            <div class="info-content">
+                                <h3 class="info-title">Opening Hours</h3>
+                                <p class="info-text">
+                                    Monday - Thursday: 12:00 PM - 11:00 PM<br>
+                                    Friday - Sunday: 12:00 PM - 12:00 AM
+                                </p>
+                            </div>
+                        </div>
+
+                        <button onclick="openGoogleMaps()" class="directions-button">
+                            Get Directions
+                        </button>
+                    </div>
+                </div>
+
+                <div class="location-map fade-in-right">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3397.175!2d-7.989755!3d31.630982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDM3JzUxLjUiTiA3wrA1OSczOS4xIlc!5e0!3m2!1sen!2sma!4v1635789876543!5m2!1sen!2sma"
+                        width="100%"
+                        height="400"
+                        style="border:0; border-radius: 1rem;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Granada Marrakech</h3>
+                    <p class="footer-text">
+                        Experience the authentic taste of Morocco in the heart of Marrakech. 
+                        Where tradition meets modern culinary excellence.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Quick Links</h4>
+                    <div class="footer-links">
+                        <button onclick="scrollToSection('about')" class="footer-link">About Us</button>
+                        <button onclick="scrollToSection('menu')" class="footer-link">Menu</button>
+                        <button onclick="scrollToSection('location')" class="footer-link">Location</button>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <span class="social-icon">📷</span>
+                        </a>
+                        <a href="#" class="social-link">
+                            <span class="social-icon">📘</span>
+                        </a>
+                        <a href="#" class="social-link">
+                            <span class="social-icon">🐦</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2024 Granada Marrakech. All rights reserved. Crafted with passion in Morocco.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
