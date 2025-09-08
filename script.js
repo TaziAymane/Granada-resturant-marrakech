@@ -285,3 +285,29 @@ window.addEventListener('error', (e) => {
             window.addEventListener('scroll', checkFade);
             checkFade();
         });
+
+// Theme Toggle Functionality
+function toggleTheme() {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+    
+    document.documentElement.setAttribute('data-theme', newTheme);
+    
+    // Update theme icon
+    const themeIcon = document.querySelector('.theme-icon');
+    themeIcon.textContent = newTheme === 'light' ? '🌙' : '☀️';
+    
+    // Save theme preference
+    localStorage.setItem('theme', newTheme);
+}
+
+// Initialize theme
+function initializeTheme() {
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    
+    const themeIcon = document.querySelector('.theme-icon');
+    if (themeIcon) {
+        themeIcon.textContent = savedTheme === 'light' ? '🌙' : '☀️';
+    }
+}

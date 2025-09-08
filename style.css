@@ -22,6 +22,7 @@
   --color-muted: hsl(0, 0%, 33%); /* #555 */
   --color-muted-foreground: hsl(50, 15%, 80%);
   
+  
   /* Card & Surface Colors */
   --color-card: hsl(20, 15%, 8%);
   --color-card-foreground: hsl(50, 20%, 95%);
@@ -46,7 +47,46 @@
   
   --radius: 1rem;
 }
-
+/* Light Theme */
+[data-theme="light"] {
+  /* Granada Brand Colors - Light Theme */
+  --color-background: hsl(0, 0%, 100%); /* Pure white */
+  --color-foreground: hsl(0, 0%, 10%); /* Almost black */
+  
+  /* Neon Green Primary (darker for light theme) */
+  --color-primary: hsl(120, 70%, 30%);
+  --color-primary-foreground: hsl(0, 0%, 100%);
+  --color-primary-glow: hsl(120, 60%, 40%);
+  
+  /* Wood Brown Secondary (lighter for contrast) */
+  --color-secondary: hsl(20, 15%, 90%);
+  --color-secondary-foreground: hsl(0, 0%, 10%);
+  
+  /* Natural Tones */
+  --color-accent: hsl(120, 20%, 80%);
+  --color-accent-foreground: hsl(0, 0%, 10%);
+  
+  --color-muted: hsl(0, 0%, 75%);
+  --color-muted-foreground: hsl(0, 0%, 40%);
+  
+  /* Card & Surface Colors */
+  --color-card: hsl(0, 0%, 98%);
+  --color-card-foreground: hsl(0, 0%, 10%);
+  
+  /* Interactive States */
+  --color-border: hsl(0, 0%, 85%);
+  
+  /* Brand Gradients */
+  --gradient-neon: linear-gradient(135deg, hsl(120, 70%, 30%), hsl(120, 60%, 40%));
+  --gradient-wood: linear-gradient(145deg, hsl(20, 15%, 90%), hsl(20, 10%, 85%));
+  --gradient-hero: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9));
+  
+  /* Shadows & Effects */
+  --shadow-neon: 0 0 20px hsla(120, 70%, 30%, 0.3);
+  --shadow-neon-strong: 0 0 40px hsla(120, 70%, 30%, 0.6);
+  --shadow-wood: 0 10px 30px -10px hsla(0, 0%, 60%, 0.3);
+  --shadow-elegant: 0 20px 60px -10px hsla(0, 0%, 70%, 0.2);
+}
 /* Reset and Base Styles */
 * {
   margin: 0;
@@ -266,6 +306,30 @@ body {
 .nav-mobile-link:hover {
   color: var(--color-primary);
   background: rgba(57, 255, 20, 0.05);
+}
+/* Theme Toggle Button */
+.theme-toggle {
+  background: none;
+  border: 2px solid var(--color-border);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  margin-left: 1rem;
+}
+
+.theme-toggle:hover {
+  border-color: var(--color-primary);
+  transform: scale(1.1);
+}
+
+.theme-icon {
+  font-size: 1.2rem;
+  transition: var(--transition-smooth);
 }
 
 /* Hero Section */
